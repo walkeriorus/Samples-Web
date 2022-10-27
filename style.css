@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: #242222;
+}
+
+.navbar a {
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #3f3f3f;
+}
+
+.title {
+  margin: 4rem 0;
+  font-family: "Krub", sans-serif;
+  font-family: "Poppins", sans-serif;
+  /*margin-bottom: 75px;*/
+  font-size: 90px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(168, 142, 240);
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 38px;
+  color: rgb(178, 188, 214);
+  padding: 0 100px;
+}
+
+.lista {
+  font-size: 40px;
+  color: rgb(178, 214, 189);
+  font-family: "Krub", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  /*height: 140vh; /*Tamanio*/
+  font-family: "Krub", sans-serif;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sau {
+  /*Color del box */
+  padding: 30px;
+  background: #242222;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.box-container .box {
+  /*Contenido del Box*/
+  height: 60rem;
+  width: 31rem;
+  background: #281c6b;
+  text-align: center;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.3rem 5rem rgba(16, 85, 16, 0.5);
+  margin: 2rem;
+}
+
+.box-container .box h3 {
+  font-size: 35px;
+  color: #b1c029ec;
+  margin: 1rem 0;
+}
+
+.box-container .box p {
+  /*Frase dentro del box */
+  padding: 0 30px;
+  font-size: 30;
+}
+
+.contact {
+  padding-top: 20px;
+  background: #171717;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+
+  .sau {
+    height: 100vh;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
