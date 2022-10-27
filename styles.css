@@ -1,0 +1,92 @@
+
+:root{
+    --bodyColor: #21282c;
+    --buttonColor: #009ee2;
+    --headerColor: #121212;
+    --textColor: #ffffff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    background-color: var(--bodyColor);
+}
+#top-header{
+    background-color:var(--headerColor);
+    color: var(--textColor);
+    width: 100%;
+    height: 80px;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+.inline-title{
+    display: inline-block;
+    width: fit-content;
+    grid-column: 1/2;
+}
+#navbar{
+    grid-column: 2/4;
+    justify-self: flex-end;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    position: relative;
+}
+.button{
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    background-color: var(--buttonColor);
+    color: var(--textColor);
+    width: 100%;
+    height: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+    
+}
+#loginForm{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--bodyColor);
+    color: var(--textColor);
+    z-index: 1000;
+}
+#loginForm>label{
+    font-size: 20px;
+    font-weight: bold;
+}
+#login-error{
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+}
+.noMostrar{
+    display: none;
+}
+#main{
+    grid-column: 1/4;
+}
+nav>a{
+    text-decoration: none;
+}

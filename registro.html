@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <header id="top-header">
+        <h1 class="inline-title">Sound Samples</h1>
+        <nav id="navbar">
+            <p id="loginButton" class="button">Login</p>
+            <form action="" id="loginForm" class="noMostrar">
+                <label for="login-user">Usuario</label>
+                <input type="text" id="login-user" name="login-user">
+                <label for="login-pass">Contraseña</label>
+                <input type="password" id="login-pass" name="login-pass">
+                <button type="submit"class="button">Iniciar Sesión</button>
+                <p id="login-error" class="noMostrar"></p>
+            </form>
+            <a href="../index.html" class="button">Ir al inicio</a ></nav>
+    </header>
+    <main id="main">
+        <form action="" id="register-form" class="grid">
+            <div class="grupo__usuario">
+                <label for="user-name">Nombre de usuario</label>
+                <input type="text" name="user-name" id="user-name" name="user-name" class="input">
+                <p class="noVisible msj-error" id="user-name-error"></p>
+            </div>
+            <div class="grupo__password">
+                <label for="user-pass">Contraseña</label>
+                <input type="password" name="user-pass" id="user-pass" name="user-pass" class="input">
+                <p class="noVisible msj-error" id="user-pass-error"></p>
+            </div>
+            <div class="grupo__email">
+                <label for="user-email">email</label>
+                <input type="email" id="user-email" name="user-email" class="input">
+                <p class="noVisible msj-error" id="user-email-error"></p>
+            </div>
+            <div class="grupo__checkboxes grid" id="intereses">
+                <label for="bass">Bass</label>
+                <input type="checkbox" id="bass" value="bass" name="bass">
+                <label for="guitar">Guitar</label>
+                <input type="checkbox" id="guitar" value="guitar" name="guitar">
+                <label for="drums">Drums</label>
+                <input type="checkbox" id="drums" value="drums" name="drums">
+                <label for="strings">Strings</label>
+                <input type="checkbox" id="strings" value="strings" name="strings">
+                <label for="vocal">Vocal</label>
+                <input type="checkbox" id="vocal" value="vocal" name="vocal">
+                <label for="synth">Synth</label>
+                <input type="checkbox" id="synth" value="synth" name="synth">
+                <label for="soundEffects">Sound Effects</label>
+                <input type="checkbox" id="soundEffects" value="soundEffects" name="soundEffects">
+                <label for="brass">Brass</label>
+                <input type="checkbox" id="brass" value="brass" name="brass">
+                <p class="noVisible msj-error" id="intereses-error">Selecciona al menos una opción.</p>
+            </div>
+            
+            <div class="grupo__terminos">
+                <input type="checkbox" id="terminos" name='terminos' class="input">
+                <label for="terminos">
+                    Acepto los terminos y condiciones
+                </label>
+                <p class="noVisible msj-error" id="terminos-error"></p>
+            </div>
+            
+            <div id="submit">
+                <button type="submit" id="registrarse" class="button">Crear Cuenta</button>
+            </div>
+        </form>
+    </main>
+    <script src="../js/form.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
