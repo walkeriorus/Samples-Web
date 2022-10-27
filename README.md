@@ -1,2 +1,0 @@
-# Pagina
-Prueba de Pagina
