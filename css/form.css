@@ -79,6 +79,50 @@ label{
     height: 45px;
     line-height: 45px;
 }
+header {
+    display: flex;
+    min-height: 70px;
+    font-family: "Roboto", sans-serif;
+    background-color: #242222;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .navbar {
+    display: flex;
+    margin-right: 10px;
+  }
+  .nav-link {
+    font-size: 30px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    height: 200px;
+    margin-right: 10px;
+  }
+  .contenedor_nav {
+    position: absolute;
+    /*bottom: 1px;*/
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+  a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: rgb(55, 197, 20);
+  }
+  
+  nav a {
+    font-weight: 600;
+    padding-right: 10px;
+  }
+  
+  nav a:hover {
+    color: rgb(241, 238, 238);
+  }
 @media screen and ( max-width: 720px){
     #register-form{
         display: flex;
