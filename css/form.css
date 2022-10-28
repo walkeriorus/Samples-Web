@@ -103,13 +103,20 @@ label{
     height: 45px;
     line-height: 45px;
 }
+/* HEADER DE EMMANUEL */
 header {
+    position: relative;
+    top:0;
     display: flex;
-    min-height: 70px;
-    font-family: "Roboto", sans-serif;
-    background-color: #242222;
     justify-content: space-between;
     align-items: center;
+
+    min-height: 70px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    background-color: var(--headerColor);
     padding: 10px;
   }
   .navbar {
@@ -117,36 +124,38 @@ header {
     margin-right: 10px;
   }
   .nav-link {
-    font-size: 30px;
+    display: inline-block;
+    font-size: 20px;
   }
   .logo {
     display: flex;
     align-items: center;
   }
   .logo img {
-    height: 200px;
+    height: 64px;
     margin-right: 10px;
   }
-  .contenedor_nav {
+  /* .contenedor_nav {
     position: absolute;
-    /*bottom: 1px;*/
     left: 80%;
     transform: translate(-50%, -50%);
-  }
+  } */
   a {
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    color: rgb(55, 197, 20);
+    color: #ffffff;
   }
   
   nav a {
-    font-weight: 600;
     padding-right: 10px;
   }
   
-  nav a:hover {
-    color: rgb(241, 238, 238);
+  .contenedor_nav nav>a:hover {
+    transform: translateY(-5px);
+    transition: 500ms;
   }
+/* FIN HEADER EMMANUEL */
+
+
 @media screen and ( max-width: 720px){
     #register-form{
         display: flex;
@@ -161,4 +170,22 @@ header {
         align-items: center;
         line-height: 24px;
     }
+    /* ACOMODAR HEADER DE EMMANUEL */
+    /* anterior
+    header {
+    display: flex;
+    min-height: 70px;
+    position: relative;
+    top:0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--headerColor);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+     */
+    header{
+        flex-direction: column;
+    }
+
 }
