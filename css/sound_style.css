@@ -1,6 +1,9 @@
 /*----------------------------------------------------------------*/
 /* Hoja de estilos                                                */
 /*----------------------------------------------------------------*/
+:root{
+    --headerColor: #121212;
+}
 /* Fuente para toda la página */
 * {
     font-family: 'Roboto', sans-serif;
@@ -145,7 +148,57 @@
         grid-template-areas: "header header" "bass brass" "strings guitar" "piano sound_fx " "pie pie";
     }
 }
+/* HEADER DE EMMANUEL */
+header {
+    position: relative;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    min-height: 70px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    background-color: var(--headerColor);
+    padding: 10px;
+  }
+  .navbar {
+    display: flex;
+    margin-right: 10px;
+  }
+  .nav-link {
+    display: inline-block;
+    font-size: 20px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    height: 64px;
+    margin-right: 10px;
+  }
+  /* .contenedor_nav {
+    position: absolute;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  } */
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  nav a {
+    padding-right: 10px;
+  }
+  
+  .contenedor_nav nav>a:hover {
+    transform: translateY(-5px);
+    transition: 500ms;
+  }
+/* FIN HEADER EMMANUEL */
 
 /*----------------------------------------------------------------*/
 /* Punto de corte para pantallas tipo celular                     */
