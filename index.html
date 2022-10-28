@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Home - Samples Web</title>
 
  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,81 +17,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   
   <link href="css/estilo_index.css" rel="stylesheet">
-
+  <link href="css/nosotros.css" rel="stylesheet">
 </head>
 <body>
 
 
 <div class="container">
 <!--navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img\logo.png"><p>Samplers Web</p></a>
-    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-        class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon">
-        </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#" style="color: #fff">
-                    Inicio
-                    <span class="sr-only">
-                        (current)
-                    </span>
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
-                    data-toggle="dropdown" href="#" id="navbarDropdown" role="button">
-                    Categorias
-                </a>
-                <div aria-labelledby="navbarDropdown" class="dropdown-menu">
-                    <a class="dropdown-item" href="#">
-                      Categoria #1
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      Categoria #2
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      Categoria #3
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      Categoria #4
-                    </a>
-                    <!--<div class="dropdown-divider">
-                    </div>-->
-                    
-                </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registro.html">
-                  Contacto
-              </a>
-          </li>
-          <li class="nav-item">
-            <a aria-disabled="false" class="nav-link" href="nosotros.html" tabindex="-1">
-                Nosotros
-            </a>
-        </li>
-            <li class="nav-item">
-                <a aria-disabled="false" class="nav-link" href="#" tabindex="-1">
-                    Acceso
-                </a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input aria-label="Search" class="form-control mr-sm-2" placeholder="Buscar" type="search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                Buscar
-            </button>
-            </input>
-        </form>
-    </div>
-    </div>
-  </nav>
+<header>
 
+  <a href="index.html" class="logo">
+
+      <img src="img/logo.png" alt="Logo de la pagina">
+      <h2 class="nombre-pagina">Samples Sound</h2>
+
+      <div class="contenedor_nav">
+
+          <nav>
+
+              <a href="/index.html" class="nav-link">Inicio</a>
+              <a href="/sound.html" class="nav-link">Sonidos</a>
+              <a href="/nosotros.html" class="nav-link">Nosotros</a>
+              <a href="/registro.html" class="nav-link">Contacto</a>
+
+          </nav>
+
+      </div>
+
+  </a>
+
+</header>
+ 
 <!--Slider-->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -123,15 +79,48 @@
       <div class="container">
         <h1 style="margin-top: 50px;">Categorias</h1>
         <div class="row justify-content-center">
-          <img src="img\cat-01.jpg" href="#" style="padding: 10px;">
-          <img src="img\cat-02.jpg" href="#" style="padding: 10px;">
-          <img src="img\cat-03.jpg" href="#" style="padding: 10px;">
-          <img src="img\cat-04.jpg" href="#" style="padding: 10px;">
+          <div class="padre">
+            <a title="Brass" href="sound.html">
+              <img id="content_div_one_photo" class="img-fluid card-img" src="img\bass.jpg" alt="Bass" height="250px" width="250px">
+                <div class="card-title">Bajos</div>
+            </a>
+            </div>
+          <div class="padre">
+            <a title="Brass" href="sound.html">
+              <img id="content_div_one_photo" class="img-fluid card-img" src="img\brass.jpg" alt="Brass" height="250px" width="250px">
+              <div class="card-title">Vientos</div>
+            </a>
+          </div>
+          <div class="padre">
+            <a title="Strings" href="sound.html">
+            <img id="content_div_one_photo" class="img-fluid card-img" src="img\strings.jpg" alt="Strings" height="250px" width="250px">
+            <div class="card-title">Cuerdas</div>
+            </a>
+          </div>
+          <div class="padre">
+            <a title="Guitar" href="sound.html">
+            <img id="content_div_one_photo" class="img-fluid card-img" src="img\Guitar.jpg" alt="Guitars" height="250px" width="250px">
+            <div class="card-title">Guitarras</div>
+            </a>
+          </div>
+          <div class="padre">
+            <a title="Piano" href="sound.html">
+            <img id="content_div_one_photo" class="img-fluid card-img" src="img\Piano.jpg" alt="Piano" height="250px" width="250px">
+              <div class="card-title">Pianos</div>          
+            </a>
+          </div>
+          <div class="padre">
+            <a title="Sound FX" href="sound.html">
+            <img id="content_div_one_photo" class="img-fluid card-img" src="img\Sound-fx.jpg" alt="Sound FX" height="250px" width="250px">
+              <div class="card-title">Sounds FX</div>
+            </a>
+          </div>
         </div>
       </div>
 </div>
    
 <!--Nuevos Packs-->
+<!-- 
 <div class="container" style="padding-top: 50px;">
   <h2>Nuevos packs</h1>
   <div class="row justify-content-center">
@@ -144,8 +133,14 @@
      <img src="img\cat-04.jpg" style="max-width: 10%; padding:5px;">
 
   </div>
+-->
 </div>
 
+<footer id="idfooter">
+
+</footer>
+
+<script src="js/footer.js"></script>
 
 
 </body>

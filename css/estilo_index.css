@@ -45,6 +45,7 @@
   background-color: #000;
   color: #fff;
 }
+
   h1{
     font-size: 2em;
   }
@@ -78,4 +79,42 @@ color: #fff;
 .footer {
 align-items: center;
 justify-content: center;
+}
+
+/* texto sobre img en Categorias */
+
+#content_div_one_photo {
+  border-radius: 20px;
+  padding: 5px;
+}
+
+#padre {
+  position: relative;    
+  display: inline-block; 
+  justify-content: center;
+}
+
+.card-title {
+  position: static;   
+  bottom: 0;
+  right: 1rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* footer */
+#idfooter {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  height: 75px;
+  margin-top: 0;
+  /*10px;*/
 }
