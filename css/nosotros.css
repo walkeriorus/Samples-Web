@@ -24,65 +24,6 @@ body {
   width: 100%;
   z-index: 100;
 }
-
-/*header {
-  position: relative;
-  display: flex;
-  min-height: 70px;
-  font-family: "Roboto", sans-serif;
-  background-color: #242222;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-.nombre-pagina {
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
-}
-
-.navbar {
-  display: flex;
-  margin-right: 10px;
-}
-
-.nav-link {
-  font-size: 30px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 64px;
-  margin-right: 10px;
-}
-
-.contenedor_nav {
-  align-self: center;
-  position: absolute;
-  bottom: 1px;
-  left: 80%;
-  transform: translate(-50%, -50%);
-}
-
-a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
-}
-
-nav a {
-  font-weight: 600;
-  padding-right: 10px;
-}
-
-nav a:hover {
-  color: rgb(241, 238, 238);
-}*/
 /* HEADER DE EMMANUEL */
 header {
   position: relative;
@@ -224,6 +165,24 @@ p {
   padding-top: 20px;
   background: #171717;
   padding-bottom: 0;
+}
+/* footer denis */
+#idfooter {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  height: 75px;
+  margin-top: 0;
+  /*10px;*/
+}
+#idfooter p {
+  color: white
 }
 
 @media screen and (max-width: 1600px) {
