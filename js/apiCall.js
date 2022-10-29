@@ -58,7 +58,7 @@ const crearAudio = function (url) {
 const crearAudios = function (contenedorName, soundList) {
     console.log('ejecutando crearAudios')
     console.log('nombreDeContenedor recibido ', contenedorName)
-    let maxlength = 30;
+    let maxlength = 15;
     let contenedorDeAudios = document.createElement('div');
     contenedorDeAudios.classList.add('contenedorDeAudios');
     for (sound of soundList) {
@@ -66,7 +66,7 @@ const crearAudios = function (contenedorName, soundList) {
         pista.classList.add('pista');
         let titulo = document.createElement('p');
         titulo.classList.add('titulo-cancion');
-        let name = ( sound.name.length > maxlength ) ? sound.name.slice(0,30) : sound.name; //Recorto los titulos a max 30 caracteres
+        let name = ( sound.name.length > maxlength ) ? sound.name.slice(0,maxlength) : sound.name; //Recorto los titulos a max 30 caracteres
         titulo.innerText = name;
         let imagen = document.createElement('img');
         imagen.src = sound.images["waveform_l"];
