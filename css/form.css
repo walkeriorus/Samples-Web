@@ -158,7 +158,22 @@ header {
     transition: 500ms;
   }
 /* FIN HEADER EMMANUEL */
-
+/*FOOTER DENIS*/
+#idfooter {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 15px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    height: 75px;
+    margin-top: 0;
+    font-size: 38px;
+  }
+/*FIN FOOTER DENIS*/
 
 @media screen and ( max-width: 720px){
     #register-form{
