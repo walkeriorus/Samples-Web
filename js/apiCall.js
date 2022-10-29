@@ -14,7 +14,7 @@ let clicks = {
 
 const buscarSonidos = function (event) {
     let target = event.currentTarget.getAttribute('name');
-    console.log('target ',target)
+    //console.log('target ',target)
     let id;
     for( categoria of categorias){
         if(target === categoria.getAttribute('name') ){
@@ -22,7 +22,7 @@ const buscarSonidos = function (event) {
             break
         }
     }
-    console.log('id ',id)
+    //console.log('id ',id)
     if ( clicks[id] ) {
         clicks[id] = false;
         let remover = document.querySelector(`#${id} .contenedorDeAudios`);
@@ -56,8 +56,8 @@ const crearAudio = function (url) {
     return audio
 }
 const crearAudios = function (contenedorName, soundList) {
-    console.log('ejecutando crearAudios')
-    console.log('nombreDeContenedor recibido ', contenedorName)
+    //console.log('ejecutando crearAudios')
+    //console.log('nombreDeContenedor recibido ', contenedorName)
     let maxlength = 15;
     let contenedorDeAudios = document.createElement('div');
     contenedorDeAudios.classList.add('contenedorDeAudios');
@@ -66,7 +66,7 @@ const crearAudios = function (contenedorName, soundList) {
         pista.classList.add('pista');
         let titulo = document.createElement('p');
         titulo.classList.add('titulo-cancion');
-        let name = ( sound.name.length > maxlength ) ? sound.name.slice(0,maxlength) : sound.name; //Recorto los titulos a max 30 caracteres
+        let name = ( sound.name.length > maxlength ) ? sound.name.slice(0,maxlength) : sound.name; //Recorto los titulos a max 15 caracteres
         titulo.innerText = name;
         let imagen = document.createElement('img');
         imagen.src = sound.images["waveform_l"];
@@ -81,7 +81,7 @@ const crearAudios = function (contenedorName, soundList) {
             clicks.categoria1 = true;
             document.getElementById('categoria1').appendChild(contenedorDeAudios);
             console.log('agregando a categoria1')
-            console.log(contenedorDeAudios)
+            //console.log(contenedorDeAudios)
             break
         case 'brass':
             clicks.categoria2 = true;
