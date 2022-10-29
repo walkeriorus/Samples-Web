@@ -27,6 +27,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: var(--bodyColor);
+}
 #main{
     max-width: 960px;
     margin: 0 auto;
@@ -86,6 +89,7 @@ label{
     display: grid;
     row-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 }
 .grupo__terminos label{
     justify-self: flex-start;
