@@ -114,7 +114,6 @@ header {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-
   background-color: var(--headerColor);
   padding: 10px;
 }
