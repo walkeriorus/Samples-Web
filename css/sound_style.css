@@ -22,26 +22,11 @@
     height: 100%;
     grid-template-rows: 100px 1fr auto;
     grid-template-columns:  15% 15% auto auto 15% 15%;
-
-    /* Distribuimos el contenido en cada fila */
     grid-template-areas: "header header header header header header"
         "bass brass strings guitar piano sound_fx"
         "pie pie pie pie pie pie";
     gap: 2%;
 }
-/*No utilizada*/
-/* .subsectionmenu-list-item {
-    display: flex;
-    font-size: .875em;
-    font-size: var(--font-size-body);
-    font-weight: 600;
-    letter-spacing: 1px;
-    position: relative;
-    margin: 0 .6em;
-    padding: 4px;
-    font-size: 16px;
-} */
-
 /*Definicion de cada grid-area*/
 .header {
     grid-area: header;
@@ -82,16 +67,6 @@
     border-radius: 10px;
     background-color: var(--item-bg-color);
 }
-/*----------------------------------------------------------------*/
-/* Definimos la apariencia de cada subitem del grid    */
-/*No se utiliza*/
-/* .subitem {
-    padding: 0px 0px 0px 0px;
-    border-radius: 15px 15px 0px 0px;
-    width: 100%;
-    max-width: 400px;
-} */
-
 /*Estilos de cada pista*/
 .headerimg {
     padding: 0;
@@ -170,10 +145,10 @@ header {
     font-size: 38px;
   }
 /*FIN FOOTER DENIS*/
-/* Punto de corte para pantallas tipo tablet                      */
+/* Punto de corte para pantallas tipo tablet */
 @media only screen and (max-width: 800px) {
     .container {
-        /* Distribuimos el contenido en cada fila */
+        /* Distribuimos el contenido en cada fila*/
         grid-template-columns: 1fr 1fr;
         grid-template-areas:"header header""bass brass""strings guitar""piano sound_fx""pie pie";
         row-gap: 0;
@@ -185,7 +160,7 @@ header {
         margin-top: 1em;
     }
 }
-/* Punto de corte para pantallas tipo celular                     */
+/* Punto de corte para pantallas tipo celular */
 @media only screen and (max-width: 600px) {
     .container {
         display: flex;
