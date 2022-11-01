@@ -2,6 +2,7 @@
     --headerColor: #121212;
     --item-bg-color: #21282c;
     --body-bg: #121212;
+    --cell-bg: #252525;
 }
 /* Fuente para toda la página */
 * {
@@ -21,7 +22,7 @@
     display: grid;
     height: 100%;
     grid-template-rows: 100px 1fr auto;
-    grid-template-columns:  15% 15% auto auto 15% 15%;
+    grid-template-columns:  repeat(6, 1fr);
     grid-template-areas: "header header header header header header"
         "bass brass strings guitar piano sound_fx"
         "pie pie pie pie pie pie";
@@ -67,10 +68,15 @@
     border-radius: 10px;
     background-color: var(--item-bg-color);
 }
+.item-title{
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 1rem 0;
+}
 /*Estilos de cada pista*/
 .headerimg {
     padding: 0;
-    border-radius: 0;
+    border-radius: 0 0 30px 30px;
     width: 100%;
     max-width: 400px;
 }
@@ -80,11 +86,29 @@
     display: flex;
     flex-direction: column;
 }
+.cell-title{
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+.cell-img{
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+}
 .player {
     position: absolute;
     display: block;
     width: 100%;
-    bottom: 25px;
+    bottom: 0;
+    border-radius: 0 0 30px 30px;
+}
+.item-title,.cell-title{
+    /* background-image: linear-gradient(180deg,transparent 25%,#21282c 25%,#121212 50%,transparent 100%); */
+    background-color: var(--headerColor);
+    border-radius: 30px 30px 0 0;
 }
 /* HEADER DE EMMANUEL */
 header {
