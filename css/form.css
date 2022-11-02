@@ -139,12 +139,14 @@ header {
     padding: 10px;
   }
   .navbar {
-    display: flex;
+    display: block;
+    line-height: 1.5;
     margin-right: 10px;
   }
   .nav-link {
     display: inline-block;
     font-size: 20px;
+    padding: .5rem 1rem
   }
   .logo {
     display: flex;
