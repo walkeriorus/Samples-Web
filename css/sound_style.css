@@ -6,10 +6,12 @@
 }
 /* Fuente para toda la página */
 * {
-    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
 }
 /*Contenedor grid*/
 #appSounds{
@@ -21,7 +23,7 @@
 .container {
     display: grid;
     height: 100%;
-    grid-template-rows: 100px 1fr auto;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns:  repeat(6, 1fr);
     grid-template-areas: "header header header header header header"
         "bass brass strings guitar piano sound_fx"
@@ -112,8 +114,6 @@
 }
 /* HEADER DE EMMANUEL */
 header {
-    position: relative;
-    top:0;
     display: flex;
     justify-content: space-between;
     align-items: center;
