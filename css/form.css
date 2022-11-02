@@ -126,8 +126,6 @@ label{
 }
 /* HEADER DE EMMANUEL */
 header {
-    position: relative;
-    top:0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -166,6 +164,9 @@ header {
   .contenedor_nav nav>a:hover {
     transform: translateY(-5px);
     transition: 500ms;
+  }
+  .nombre-pagina{
+    font-size: 24px;
   }
 /* FIN HEADER EMMANUEL */
 /*FOOTER DENIS*/
