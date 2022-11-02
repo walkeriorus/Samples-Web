@@ -1,6 +1,11 @@
 :root{
   --headerColor: #121212;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /* navbar */
 .btn {
   color: #fff;
