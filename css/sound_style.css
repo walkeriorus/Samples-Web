@@ -126,7 +126,7 @@ header {
     background-color: var(--headerColor);
     padding: 10px;
   }
-  .navbar {
+  .nav-bar {
     display: block;
     line-height: 1.5;
     margin-right: 10px;
@@ -182,8 +182,18 @@ header {
     header{
         flex-direction: column;
     }
+    #idfooter{
+        font-size: 24px;
+    }
     .item{
         margin-top: 1em;
+    }
+}
+@media screen and (max-width:720px){
+    .nav-bar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 /* Punto de corte para pantallas tipo celular */
@@ -195,7 +205,7 @@ header {
     .item{
         margin-bottom: 20px;
     }
-    #idfooter{
-        font-size: 28px;
-    }
+}
+@media only screen  and ( max-width: 500px){
+   /**/
 }

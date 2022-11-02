@@ -138,7 +138,7 @@ header {
     background-color: var(--headerColor);
     padding: 10px;
   }
-  .navbar {
+  .nav-bar {
     display: block;
     line-height: 1.5;
     margin-right: 10px;
@@ -187,7 +187,14 @@ header {
     font-size: 38px;
 }
 /*FIN FOOTER DENIS*/
-
+@media screen and (max-width: 800px){
+    header{
+        flex-direction: column;
+    }
+    #idfooter{
+        font-size: 24px;
+    }
+}
 @media screen and ( max-width: 720px){
     #register-form{
         display: flex;
@@ -202,8 +209,10 @@ header {
         align-items: center;
         line-height: 24px;
     }
-    header{
-        flex-direction: column;
+    .nav-bar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }

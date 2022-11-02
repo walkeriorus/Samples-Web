@@ -27,7 +27,7 @@ header {
   background-color: var(--headerColor);
   padding: 10px;
 }
-.navbar {
+.nav-bar {
   display: block;
   line-height: 1.5;
   margin-right: 10px;
@@ -117,24 +117,24 @@ nav a {
 }
 /*fin footer*/
 @media screen and (max-width: 1600px) {
-  /* nav {
-    padding: 30px 0px;
-  } */
+  /**/
 }
 @media screen and (max-width: 1024px) {
-  /* nav {
-    padding: 20px 0px;
-  } */
+  /**/
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   header {
     flex-direction: column;
   }
-  /* nav {
-    padding: 10px 0px;
-  } */
   #idfooter{
     font-size: 24px;
+  }
+}
+@media screen and (max-width:720px){
+  .nav-bar{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
   }
 }
 @media screen and (max-width: 500px){
