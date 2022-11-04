@@ -118,6 +118,31 @@ body{
     font-size: 38px;
 }
 /*FIN FOOTER DENIS*/
+/*Panel de usuario*/
+.user-panel{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--body-bgColor);
+  border-radius: 10px;
+  padding: 10px;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.control{
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 500;
+}
+
+
+
+
 /*BREAKPOINTS*/
 @media screen and (max-width: 800px){
     #menu-principal{
