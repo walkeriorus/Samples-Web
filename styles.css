@@ -73,7 +73,6 @@ body{
     padding: 10px;
 }
 #menu-secundario{
-    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -87,12 +86,20 @@ body{
     cursor: pointer;
 }
 #menu-secundario-links{
-    display: none;
     width: 100%;
     justify-content: space-evenly;
 }
-#menu-secundario:hover>#menu-secundario-links{
-    display: flex;
+#desplegar-menu{
+  max-width: 32px;
+}
+.displayNone{
+  display: none ;
+}
+.grid{
+  display: grid;
+}
+.flex{
+  display: flex;
 }
 /*FIN HEADER*/
 /*FOOTER DENIS*/
@@ -138,8 +145,7 @@ body{
     }
 }
 @media screen and ( max-width: 420px){
-    #menu-secundario:hover>#menu-secundario-links{
-        display: grid;
+    #menu-secundario-links{
         grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
