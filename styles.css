@@ -49,7 +49,7 @@ body{
   nav a {
     padding-right: 10px;
   }
-  .contenedor_nav nav>a:hover {
+  .nav-link:hover {
     transform: translateY(-5px);
     transition: 500ms;
   }
