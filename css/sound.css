@@ -21,12 +21,10 @@ body{
 }
 .container {
     display: grid;
-    height: 100%;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr;
     grid-template-columns:  repeat(6, 1fr);
-    grid-template-areas: "header header header header header header"
-        "bass brass strings guitar piano sound_fx"
-        "pie pie pie pie pie pie";
+    grid-template-areas:
+        "bass brass strings guitar piano sound_fx";
     gap: 2%;
 }
 /*Definicion de cada grid-area*/
@@ -79,7 +77,6 @@ body{
     padding: 0;
     border-radius: 0 0 30px 30px;
     width: 100%;
-    max-width: 400px;
 }
 /**/
 .cell{
@@ -116,7 +113,7 @@ body{
     .container {
         /* Distribuimos el contenido en cada fila*/
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:"header header""bass brass""strings guitar""piano sound_fx""pie pie";
+        grid-template-areas:"bass brass""strings guitar""piano sound_fx";
         row-gap: 0;
     }
     .item{
@@ -124,11 +121,6 @@ body{
     }
 }
 @media screen and (max-width:720px){
-    .nav-bar{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 /* Punto de corte para pantallas tipo celular */
 @media only screen and (max-width: 600px) {
