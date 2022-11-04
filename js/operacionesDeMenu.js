@@ -21,5 +21,26 @@ let identificarMenu = function () {
     // console.log('Ejecutando identificarMenu');
     // console.log('Menu identificado: ',menu);
 }
+let mostrarMenuSecundario = function(){
+        let menuSecundarioLinks = document.querySelector('#menu-secundario-links');
+        let estadoDisplayMenuSecundario = window.getComputedStyle(menuSecundarioLinks).display;
+        let anchoDePantalla = window.innerWidth;
+        if( estadoDisplayMenuSecundario === 'none'){
+            if( anchoDePantalla <= 420 ){
+                menuSecundarioLinks.classList.toggle('grid');
+            }
+            else{
+                menuSecundarioLinks.classList.toggle('flex')
+            }
+        }
+        else{
+            menuSecundarioLinks.classList.toggle(estadoDisplayMenuSecundario)
+        }
+        
+}
+
 window.addEventListener('resize', identificarMenu);
-window.addEventListener('load', identificarMenu)
+window.addEventListener('load', identificarMenu);
+
+let desplegarMenu = document.querySelector('#desplegar-menu');
+desplegarMenu.addEventListener('click', mostrarMenuSecundario );
