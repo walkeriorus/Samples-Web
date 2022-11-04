@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Samples Web</title>
   <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
- 
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -15,27 +16,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="styles.css">
   <link href="css/estilo_index.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <a href="index.html" class="logo" id="titulo-logo">
+    <div id="menu-principal">
+      <a href="/index.html" class="logo">
         <img src="img/logo.png" alt="Logo de la pagina">
-        <h2 class="nombre-pagina" >Samples Sound</h2>
-    </a>
-    <div class="contenedor_nav">
-      <nav class="nav-bar">
-        <a href="/index.html" class="nav-link">Inicio</a>
-        <a href="/sound.html" class="nav-link">Sonidos</a>
-        <a href="/nosotros.html" class="nav-link">Nosotros</a>
-        <a href="/registro.html" class="nav-link">Registro</a>
-      </nav>
+        <h2 class="nombre-pagina">Samples Sound</h2>
+      </a>
+      <div class="contenedor_nav">
+        <nav class="nav-bar">
+          <a href="/index.html" class="nav-link">Inicio</a>
+          <a href="/sound.html" class="nav-link">Sonidos</a>
+          <a href="/nosotros.html" class="nav-link">Nosotros</a>
+          <a href="/registro.html" class="nav-link">Registro</a>
+        </nav>
+      </div>
+    </div>
+    <div id="menu-secundario">
+      <a href="/index.html" class="logo">
+        <img src="img/logo.png" alt="Logo de la pagina">
+        <h2 class="nombre-pagina">Samples Sound</h2>
+      </a>
+      <div id="menu-secundario-links">
+        <a class="nav-link" href="/index.html">Inicio</a>
+        <a class="nav-link" href="/sound.html">Sonidos</a>
+        <a class="nav-link" href="/nosotros.html">Nosotros</a>
+        <a class="nav-link" href="/registro.html">Registro</a>
+      </div>
     </div>
   </header>
-<div class="container">
-<!--Slider-->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="container">
+    <!--Slider-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="img\slider-01.jpg" alt="First slide">
@@ -58,60 +74,65 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-</div>
+    </div>
 
-<!--Categorias-->
-<div>
+    <!--Categorias-->
+    <div>
       <div class="container">
         <h1 style="margin-top: 50px;">Categorias</h1>
         <div class="row justify-content-center">
           <div class="padre categoria" id="categoria1" name="bass">
             <h4 title="Bass" class="titulo-categoria" name="bass">
-              <img id="content_div_one_photo" class="img-fluid card-img" src="img\bass.jpg" alt="Bass" height="250px" width="250px" style="width: 200px;">
-                <div class="card-title">Bajos</div>
+              <img id="content_div_one_photo" class="img-fluid card-img" src="img\bass.jpg" alt="Bass" height="250px"
+                width="250px" style="width: 200px;">
+              <div class="card-title">Bajos</div>
             </h4>
           </div>
           <div class="padre categoria" id="categoria2" name="brass">
             <h4 title="Brass" class="titulo-categoria" name="brass">
-              <img id="content_div_one_photo" class="img-fluid card-img" src="img\brass.jpg" alt="Brass" height="250px" width="250px" style="width: 200px;">
+              <img id="content_div_one_photo" class="img-fluid card-img" src="img\brass.jpg" alt="Brass" height="250px"
+                width="250px" style="width: 200px;">
               <div class="card-title">Vientos</div>
             </h4>
           </div>
           <div class="padre categoria" id="categoria3" name="strings">
             <h4 title="Strings" href="sound.html" class="titulo-categoria" name="strings">
-            <img id="content_div_one_photo" class="img-fluid card-img" src="img\strings.jpg" alt="Strings" height="250px" width="250px" style="width: 200px;">
-            <div class="card-title">Cuerdas</div>
+              <img id="content_div_one_photo" class="img-fluid card-img" src="img\strings.jpg" alt="Strings"
+                height="250px" width="250px" style="width: 200px;">
+              <div class="card-title">Cuerdas</div>
             </h4>
           </div>
           <div class="padre categoria" id="categoria4" name="guitar">
             <h4 title="Guitar" href="sound.html" class="titulo-categoria" name="guitar">
-            <img id="content_div_one_photo" class="img-fluid card-img" src="img\Guitar.jpg" alt="Guitars" height="250px" width="250px" style="width: 200px;">
-            <div class="card-title">Guitarras</div>
+              <img id="content_div_one_photo" class="img-fluid card-img" src="img\Guitar.jpg" alt="Guitars"
+                height="250px" width="250px" style="width: 200px;">
+              <div class="card-title">Guitarras</div>
             </h4>
           </div>
           <div class="padre categoria" id="categoria5" name="piano">
             <h4 title="Piano" href="sound.html" class="titulo-categoria" name="piano">
-            <img id="content_div_one_photo" class="img-fluid card-img" src="img\Piano.jpg" alt="Piano" height="250px" width="250px" style="width: 200px;">
-              <div class="card-title">Pianos</div>          
+              <img id="content_div_one_photo" class="img-fluid card-img" src="img\Piano.jpg" alt="Piano" height="250px"
+                width="250px" style="width: 200px;">
+              <div class="card-title">Pianos</div>
             </h4>
           </div>
           <div class="padre categoria" id="categoria6" name="sfx">
             <h4 title="Sound FX" href="sound.html" class="titulo-categoria" name="sfx">
-            <img id="content_div_one_photo" class="img-fluid card-img" src="img\Sound-fx.jpg" alt="Sound FX" height="250px" width="250px" style="width: 200px;">
+              <img id="content_div_one_photo" class="img-fluid card-img" src="img\Sound-fx.jpg" alt="Sound FX"
+                height="250px" width="250px" style="width: 200px;">
               <div class="card-title">Sounds FX</div>
             </h4>
           </div>
         </div>
       </div>
-</div>
-</div>
-<footer id="idfooter">
-</footer>
+    </div>
+  </div>
+  <footer id="idfooter">
+  </footer>
 
-<script src="js/footer.js"></script>
-<script src="js/apiCall.js"></script>
-<script src="js/resaltar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/apiCall.js"></script>
+  <script src="js/resaltar.js"></script>
 </body>
+
 </html>
-
-

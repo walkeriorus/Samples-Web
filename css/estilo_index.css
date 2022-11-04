@@ -1,11 +1,3 @@
-:root{
-  --headerColor: #121212;
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 /* navbar */
 .btn {
   color: #fff;
@@ -109,70 +101,6 @@ justify-content: center;
   color: #fff;
   text-transform: uppercase;
 }
-/* HEADER DE EMMANUEL */
-header {
-  position: relative;
-  top:0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  min-height: 70px;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: var(--headerColor);
-  padding: 10px;
-}
-.nav-bar {
-  display: block;
-  line-height: 1.5;
-  margin-right: 10px;
-}
-.nav-link {
-  display: inline-block;
-  font-size: 20px;
-  padding: .5rem 1rem
-}
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo img {
-  height: 64px;
-  margin-right: 10px;
-}
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-nav a {
-  padding-right: 10px;
-}
-/*Selector mas especifico,de otra manera bootstrap usa
-color azul para :hover sobre un a*/
-.contenedor_nav nav>a:hover {
-  transform: translateY(-5px);
-  transition: 500ms;
-  color: #fff;
-}
-/* FIN HEADER EMMANUEL */
-/* footer */
-#idfooter {
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 38px;
-  padding: 15px;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  padding: 20px;
-  height: 75px;
-  margin-top: 0;
-  /*10px;*/
-}
 #titulo-logo:hover{
   text-decoration: none;
   color: white;
@@ -222,24 +150,3 @@ audio{
   cursor: pointer;
 }
 /*FIN ESTILOS DE API */
-@media screen and ( max-width: 800px){
-  header{
-    flex-direction: column;
-  }
-  #idfooter{
-    font-size: 24px;
-  }
-}
-@media screen and (max-width:720px){
-  .nav-bar{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-}
-@media screen and (max-width: 600px){
-  /**/
-}
-@media screen and (max-width: 500px){
-  /**/
-}

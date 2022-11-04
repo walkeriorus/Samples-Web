@@ -1,68 +1,11 @@
 :root{
-  --person-bg: #281c6b;
-  --person-nameTextColor:#b1c029ec;
-  --textColor: #ffffff;
-  --headerColor: #121212;
+  --person-bgColor: #281c6b;
+  --personName-textColor:#b1c029ec;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: "Roboto", sans-serif;
-  background: #242222;
-}
-/* HEADER DE EMMANUEL */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  min-height: 70px;
-  text-transform: uppercase;
-  font-weight: bold;
-
-  background-color: var(--headerColor);
-  padding: 10px;
-}
-.nav-bar {
-  display: block;
-  line-height: 1.5;
-  margin-right: 10px;
-}
-.nav-link {
-  display: inline-block;
-  font-size: 20px;
-  padding: .5rem 1rem
-}
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo img {
-  height: 64px;
-  margin-right: 10px;
-}
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-nav a {
-  padding-right: 10px;
-}
-.contenedor_nav nav>a:hover {
-  transform: translateY(-5px);
-  transition: 500ms;
-}
-.nombre-pagina{
-  font-size: 24px;
-}
-/* FIN HEADER EMMANUEL */
 #main{
   display: flex;
   flex-direction: column;
-  color: var(--textColor);
+  color: inherit;
   font-size: 40px;
   max-width: 960px;
   margin: 0 auto;
@@ -86,14 +29,14 @@ nav a {
   text-align: center;
 }
 .person{
-  background-color: var(--person-bg);
+  background-color: var(--person-bgColor);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 112px 0.5fr 0.5fr;
   justify-items: center;
 }
 .person-name{
-  color: var(--person-nameTextColor);
+  color: var(--personName-textColor);
   align-self: flex-start;
 }
 .person-description{
@@ -105,34 +48,7 @@ nav a {
 .person-social{
   align-self: flex-end;
 }
-/* footer denis */
-#idfooter {
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 38px;
-  padding: 15px;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  padding: 20px;
-  height: 75px;
-  margin-top: 0;
-}
-/*fin footer*/
-@media screen and (max-width: 1600px) {
-  /**/
-}
-@media screen and (max-width: 1024px) {
-  /**/
-}
 @media screen and (max-width: 800px) {
-  header {
-    flex-direction: column;
-  }
-  #idfooter{
-    font-size: 24px;
-  }
   .persons{
     font-size: 30px;
   }
@@ -141,18 +57,8 @@ nav a {
   }
 }
 @media screen and (max-width:720px){
-  .nav-bar{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
   .persons{
     grid-template-columns: 1fr;
     font-size: 30px;
-  }
-}
-@media screen and (max-width: 500px){
-  #idfooter>p{
-    padding: 0;
   }
 }

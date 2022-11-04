@@ -1,8 +1,7 @@
 :root{
-    --headerColor: #121212;
-    --item-bg-color: #21282c;
-    --body-bg: #121212;
-    --cell-bg: #252525;
+    --cell-title-textColor: #121212;
+    --item-bgColor: #21282c;
+    --body-bgColor: #121212;
 }
 /* Fuente para toda la página */
 * {
@@ -15,7 +14,7 @@ body{
 }
 /*Contenedor grid*/
 #appSounds{
-    background-color: var(--body-bg);
+    background-color: var(--body-bgColor);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -68,7 +67,7 @@ body{
     padding: 10px;
     color: rgb(239, 240, 245);
     border-radius: 10px;
-    background-color: var(--item-bg-color);
+    background-color: var(--item-bgColor);
 }
 .item-title{
     text-transform: uppercase;
@@ -109,68 +108,9 @@ body{
 }
 .item-title,.cell-title{
     /* background-image: linear-gradient(180deg,transparent 25%,#21282c 25%,#121212 50%,transparent 100%); */
-    background-color: var(--headerColor);
+    background-color: var(--cell-title-textColor);
     border-radius: 30px 30px 0 0;
 }
-/* HEADER DE EMMANUEL */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    min-height: 70px;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    background-color: var(--headerColor);
-    padding: 10px;
-  }
-  .nav-bar {
-    display: block;
-    line-height: 1.5;
-    margin-right: 10px;
-  }
-  .nav-link {
-    display: inline-block;
-    font-size: 20px;
-    padding: .5rem 1rem
-  }
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  .logo img {
-    height: 64px;
-    margin-right: 10px;
-  }
-  a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  nav a {
-    padding-right: 10px;
-  }
-  
-  .contenedor_nav nav>a:hover {
-    transform: translateY(-5px);
-    transition: 500ms;
-  }
-/* FIN HEADER EMMANUEL */
-/*FOOTER DENIS*/
-#idfooter {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
-    padding: 20px;
-    height: 75px;
-    margin-top: 0;
-    font-size: 38px;
-  }
-/*FIN FOOTER DENIS*/
 /* Punto de corte para pantallas tipo tablet */
 @media only screen and (max-width: 800px) {
     .container {
@@ -178,12 +118,6 @@ header {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:"header header""bass brass""strings guitar""piano sound_fx""pie pie";
         row-gap: 0;
-    }
-    header{
-        flex-direction: column;
-    }
-    #idfooter{
-        font-size: 24px;
     }
     .item{
         margin-top: 1em;
@@ -205,7 +139,4 @@ header {
     .item{
         margin-bottom: 20px;
     }
-}
-@media only screen  and ( max-width: 500px){
-   /**/
 }
