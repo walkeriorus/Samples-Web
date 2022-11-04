@@ -16,43 +16,41 @@
 </head>
 
 <body>
-
+    <header>
+        <div id="menu-principal">
+            <a href="/index.html" class="logo">
+                <img src="img/logo.png" alt="Logo de la pagina">
+                <h2 class="nombre-pagina">Samples Sound</h2>
+            </a>
+            <div class="contenedor_nav">
+                <nav class="nav-bar">
+                    <a href="/index.html" class="nav-link">Inicio</a>
+                    <a href="/sound.html" class="nav-link">Sonidos</a>
+                    <a href="/nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="/registro.html" class="nav-link">Registro</a>
+                </nav>
+            </div>
+        </div>
+        <div id="menu-secundario" class="displayNone">
+            <a href="/index.html" class="logo">
+                <img src="img/logo.png" alt="Logo de la pagina">
+                <h2 class="nombre-pagina">Samples Sound</h2>
+            </a>
+            <img id="desplegar-menu" src="img/icons/icons8-chevron-abajo-en-círculo-64.png">
+            <div id="menu-secundario-links" class="displayNone">
+                <a class="nav-link" href="/index.html">Inicio</a>
+                <a class="nav-link" href="/sound.html">Sonidos</a>
+                <a class="nav-link" href="/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="/registro.html">Registro</a>
+            </div>
+        </div>
+    </header>
     <div id="appSounds">
         <div class="container">
-            <header>
-                <div id="menu-principal">
-                    <a href="/index.html" class="logo">
-                        <img src="img/logo.png" alt="Logo de la pagina">
-                        <h2 class="nombre-pagina">Samples Sound</h2>
-                    </a>
-                    <div class="contenedor_nav">
-                        <nav class="nav-bar">
-                            <a href="/index.html" class="nav-link">Inicio</a>
-                            <a href="/sound.html" class="nav-link">Sonidos</a>
-                            <a href="/nosotros.html" class="nav-link">Nosotros</a>
-                            <a href="/registro.html" class="nav-link">Registro</a>
-                        </nav>
-                    </div>
-                </div>
-                <div id="menu-secundario" class="displayNone">
-                    <a href="/index.html" class="logo">
-                        <img src="img/logo.png" alt="Logo de la pagina">
-                        <h2 class="nombre-pagina">Samples Sound</h2>
-                    </a>
-                    <img id="desplegar-menu" src="img/icons/icons8-chevron-abajo-en-círculo-64.png">
-                    <div id="menu-secundario-links" class="displayNone">
-                        <a class="nav-link" href="/index.html">Inicio</a>
-                        <a class="nav-link" href="/sound.html">Sonidos</a>
-                        <a class="nav-link" href="/nosotros.html">Nosotros</a>
-                        <a class="nav-link" href="/registro.html">Registro</a>
-                    </div>
-                </div>
+            <categoria-component v-for="categoria in categorias" :datos-categoria="categoria"></categoria-component>
         </div>
-        </header>
-        <categoria-component v-for="categoria in categorias" :datos-categoria="categoria"></categoria-component>
-        <footer id="idfooter" class="pie"></footer>
     </div>
-    </div>
+    <footer id="idfooter" class="pie"></footer>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/sound.js"></script>
     <script src="js/footer.js"></script>
