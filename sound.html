@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/sound.css">
 </head>
+
 <body>
-    
+
     <div id="appSounds">
         <div class="container">
             <header>
@@ -33,26 +34,29 @@
                         </nav>
                     </div>
                 </div>
-                <div id="menu-secundario">
+                <div id="menu-secundario" class="displayNone">
                     <a href="/index.html" class="logo">
                         <img src="img/logo.png" alt="Logo de la pagina">
                         <h2 class="nombre-pagina">Samples Sound</h2>
                     </a>
-                    <div id="menu-secundario-links">
+                    <img id="desplegar-menu" src="img/icons/icons8-chevron-abajo-en-círculo-64.png">
+                    <div id="menu-secundario-links" class="displayNone">
                         <a class="nav-link" href="/index.html">Inicio</a>
                         <a class="nav-link" href="/sound.html">Sonidos</a>
                         <a class="nav-link" href="/nosotros.html">Nosotros</a>
                         <a class="nav-link" href="/registro.html">Registro</a>
                     </div>
                 </div>
-            </header>
-            <categoria-component v-for="categoria in categorias" :datos-categoria="categoria"></categoria-component>
-            <footer id="idfooter" class="pie"></footer>
         </div>
+        </header>
+        <categoria-component v-for="categoria in categorias" :datos-categoria="categoria"></categoria-component>
+        <footer id="idfooter" class="pie"></footer>
+    </div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/sound.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/operacionesDeMenu.js"></script>
 </body>
+
 </html>
