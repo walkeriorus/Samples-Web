@@ -33,15 +33,17 @@
         <a href="/nosotros.html" class="nav-link">Nosotros</a>
         <a href="/registro.html" class="nav-link">Registro</a>
       </nav>
-      <div class="user-panel">
-        <div class="user-info">
-          <img class="user-avatar" src="img/icons/icons8-account-48.png">
-          <p class="user-name">Usuario</p>
-        </div>
-        <div class="user-controls">
-          <button class="control">salir</button>
-          <button class="control">entrar</button>
-        </div>
+      <div id="login">
+        <label for="hideShowLogin">Login</label>
+        <input type="checkbox" id="hideShowLogin">
+        <form id="user-login" action="">
+          <label for="user-name">Nombre de usuario</label>
+          <input type="text" name="user-name" id="user-name" autocomplete="off">
+          <label for="user-password">Contraseña</label>
+          <input type="password" name="user-password" id="user-password" autocomplete="off">
+          <button type="submit" class="button">Iniciar sesion</button>
+          <a href="/registro.html">Registrarse</a>
+        </form>
       </div>
     </div>
     <div id="menu-secundario" class="displayNone">
@@ -56,17 +58,7 @@
           <a class="nav-link" href="/nosotros.html">Nosotros</a>
           <a class="nav-link" href="/registro.html">Registro</a>
       </div>
-      <div class="user-panel">
-        <div class="user-info">
-          <img class="user-avatar" src="img/icons/icons8-account-48.png">
-          <p class="user-name">Usuario</p>
-        </div>
-        <div class="user-controls">
-          <button class="control">salir</button>
-          <button class="control">entrar</button>
-        </div>
-      </div>
-  </div>
+    </div>
   </header>
   <div class="container">
     <!--Slider-->
