@@ -1,5 +1,6 @@
 :root{
     --msj-error-bg:  #b75a5a;
+    --button-bgColor: #009ee2;
 }
 #main{
     max-width: 960px;
@@ -87,7 +88,7 @@ label{
     align-items: center;
     justify-content: center;
     line-height: 1;
-    background-color: var(--buttonColor);
+    background-color: var(--button-bgColor);
     color: var(--textColor);
     min-width: 40%;
     width: 100%;
