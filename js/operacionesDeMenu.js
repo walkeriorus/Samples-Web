@@ -42,6 +42,16 @@ let mostrarMenuSecundario = function(){
         
 }
 
+let elementoExiste = function( idElemento ){
+    if( document.querySelector(`#${idElemento}`) !== null){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+
 window.addEventListener('resize', identificarMenu );
 window.addEventListener('load', identificarMenu );
 
