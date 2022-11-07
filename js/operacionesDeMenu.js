@@ -23,24 +23,27 @@ let identificarMenu = function () {
 }
 let mostrarMenuSecundario = function(){
         let menuSecundarioLinks = document.querySelector('#menu-secundario-links');
-        let estadoDisplayMenuSecundario = window.getComputedStyle(menuSecundarioLinks).display;
+        // let displayValue = window.getComputedStyle(menuSecundarioLinks).display ;
+        let displayValue = menuSecundarioLinks.classList ;
         let anchoDePantalla = window.innerWidth;
-        if( estadoDisplayMenuSecundario === 'none'){
+        if( displayValue[0] === 'displayNone'){
+            menuSecundarioLinks.classList.remove('displayNone')
             if( anchoDePantalla <= 420 ){
                 menuSecundarioLinks.classList.toggle('grid');
             }
             else{
-                menuSecundarioLinks.classList.toggle('flex')
+                menuSecundarioLinks.classList.toggle('flex');
             }
         }
         else{
-            menuSecundarioLinks.classList.toggle(estadoDisplayMenuSecundario)
+            menuSecundarioLinks.classList.toggle( displayValue );
+            menuSecundarioLinks.classList.add('displayNone');
         }
         
 }
 
-window.addEventListener('resize', identificarMenu);
-window.addEventListener('load', identificarMenu);
+window.addEventListener('resize', identificarMenu );
+window.addEventListener('load', identificarMenu );
 
 let desplegarMenu = document.querySelector('#desplegar-menu');
 desplegarMenu.addEventListener('click', mostrarMenuSecundario );
