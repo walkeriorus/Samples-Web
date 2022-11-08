@@ -39,7 +39,7 @@ let mostrarMenuSecundario = function () {
     }
 
 }
-let elementoExiste = function (idElemento) {
+let elementoExiste = function ( idElemento ){
     let selector = '#'+ idElemento
     if ( document.querySelector( selector ) !== null ) {
         return true
@@ -48,10 +48,22 @@ let elementoExiste = function (idElemento) {
         return false
     }
 }
-let agregarLoginEnMenu = function (idElemento) {
+let esHijoDe = function( idPadre, idHijo ){
+    let selector = `#${ idPadre } #${ idHijo }`;
+    if( document.querySelector (selector ) !== null){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+let agregaLoginEnMenu = function ( idMenu ) {
     //Agrega la seccion login sobre el menu con id = idElemento
-    let div = document.createElement('div');
-    div.setAttribute('id', 'login');
+    //La funcion no hace ninguna comprobacion
+
+    let loginDiv = document.createElement('div');
+    loginDiv.setAttribute('id', 'login');
     let plantilla = `
     <label for="hideShowLogin">Login</label>
     <input type="checkbox" id="hideShowLogin">
@@ -64,17 +76,46 @@ let agregarLoginEnMenu = function (idElemento) {
         <a href="/registro.html">Registrarse</a>
     </form>
     `;
+    loginDiv.innerHTML = plantilla;
+    document.querySelector(`#${idMenu}`).appendChild( loginDiv );
     
 }
 let operacionesEnCarga = function () {
     //Ejecuta las siguientes instrucciones en el evento 'load' del objeto window
-    let menu = identificarMenu(); //Miro que menu esta mostrandose
+    let idMenu = identificarMenu(); //Miro que menu esta mostrandose, esto devuelve un id
+    console.log('Se esta mostrando el menu con id: ', idMenu );
+    console.log( `Tiene ${idMenu} un login? : ${esHijoDe( idMenu, 'login')}` );
+    if( !esHijoDe( idMenu, 'login' ) ){
+        if( idMenu === 'menu-secundario'){
+            idMenu = idMenu + '-links';
+            console.log('idMenu nuevo: ', idMenu )
+            if( esHijoDe('menu-principal','login') ){
+                //Si es asi elimino ese login, para que solo exista uno a la vez
+                console.log('menu-principal ya tiene un login');
+                let menuPrincipal = document.querySelector('#menu-principal');
+                let loginMenuPrincipal = document.querySelector('#menu-principal #login');
+                menuPrincipal.removeChild( loginMenuPrincipal );
+                console.log('Eliminando login de menu-principal');
+            }
+        }
+        else{
+            if( esHijoDe('menu-secundario','login')){
+                console.log('menu-secundario ya tiene un login');
+                let menuSecundarioLinks = document.querySelector('#menu-secundario-links');
+                let loginMenuSecundario = document.querySelector('#menu-secundario-links #login');
+                menuSecundarioLinks.removeChild( loginMenuSecundario );
+                console.log('Eliminando login de menu-secundario');
+            }
+        }
+        
+    agregaLoginEnMenu( idMenu );
+    }
 }
 
 
 
-window.addEventListener('resize', identificarMenu);
-window.addEventListener('load', identificarMenu);
+window.addEventListener('resize', operacionesEnCarga );
+window.addEventListener('load', operacionesEnCarga );
 
 let desplegarMenu = document.querySelector('#desplegar-menu');
-desplegarMenu.addEventListener('click', mostrarMenuSecundario);
+desplegarMenu.addEventListener( 'click', mostrarMenuSecundario );
