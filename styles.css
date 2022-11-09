@@ -61,7 +61,7 @@ nav a {
 
 .nav-link:hover {
   transform: translateY(-5px);
-  transition: 500ms;
+  transition: 350ms;
 }
 
 .nombre-pagina {
@@ -150,6 +150,9 @@ nav a {
   user-select: none;
   line-height: 1.5;
 }
+#login>label{
+  cursor:pointer;
+}
 #hideShowLogin{
   display: none;
 }
@@ -183,6 +186,7 @@ nav a {
   display: inline-block;
   font-size: 20px;
   padding: .5rem 1rem;
+  border-radius: 4px;
   background-color: #01bcf3;
   color: white;
   font-weight: bold;
@@ -190,13 +194,38 @@ nav a {
 #user-login>label{
   margin: 0;
 }
+#login>label:active,#user-login>button:active{
+  animation-name: oprimir;
+  animation-timing-function: linear;
+  animation-duration: 100ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 #user-login>button{
   border:0 ;
-  border-radius: 4px;
 }
 #user-login a{
   color: #01bcf3;
 }
+/*Animaciones*/
+@keyframes oprimir {
+  0%{
+    transform: scale(0.97);
+  }
+  25%{
+    transform: scale(0.95);
+  }
+  50%{
+    transform: scale(0.93);
+  }
+  75%{
+    transform: scale(0.91);
+  }
+  100%{
+    transform: scale(0.89);
+  }
+}
+/*FIN Animaciones*/
 /*BREAKPOINTS*/
 @media screen and ( max-width:1024px){
   #menu-principal{
