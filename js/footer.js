@@ -1,4 +1,4 @@
-let cad=`
+let footer=`
     <a class="redsoc" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"
         aria-hidden="true"></i></a>
     <a class="redsoc" href="https://www.facebook.com/marcela.cerda.9" target="_blank"><i class="fa fa-facebook"
@@ -11,4 +11,4 @@ let cad=`
         class="fa fa-linkedin" aria-hidden="true"></i></a>
     <p>Derechos reservados @2022 </p>
 `
-document.getElementById("idfooter").innerHTML=cad;
+document.getElementById("idfooter").innerHTML = footer;
