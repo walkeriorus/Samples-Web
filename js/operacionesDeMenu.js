@@ -82,7 +82,9 @@ let agregaLoginEnMenu = function ( idMenu ) {
 }
 let operacionesEnCarga = function () {
     //Ejecuta las siguientes instrucciones en el evento 'load' del objeto window
-    let idMenu = identificarMenu(); //Miro que menu esta mostrandose, esto devuelve un id
+    resaltarNavLink();
+     //Miro que menu esta mostrandose
+    let idMenu = identificarMenu(); //esto devuelve un id
     console.log('Se esta mostrando el menu con id: ', idMenu );
     console.log( `Tiene ${idMenu} un login? : ${esHijoDe( idMenu, 'login')}` );
     if( !esHijoDe( idMenu, 'login' ) ){
@@ -110,6 +112,13 @@ let operacionesEnCarga = function () {
         
     agregaLoginEnMenu( idMenu );
     }
+}
+
+
+let resaltarNavLink = function(){
+    let navLink = document.querySelector(`.nav-link[href="${pathName}"]`);
+    navLink.style.backgroundColor = "white";
+    navLink.style.color = "black";
 }
 
 
