@@ -1,6 +1,6 @@
 let apiKey = "WNSWhsyB55gAM7J9btrA0o1qYaHHfl0rFwOBLYKM";
 let baseUrl = "https://freesound.org/apiv2/";
-const categorias = document.querySelectorAll(`div[id^=categoria]`);//trae los div cuyos id comiencen en categoria
+const categorias = document.querySelectorAll(`div[id^=categoria]`); //trae los div cuyos id comiencen en categoria
 
 let clicks = {
     categoria1: false,
@@ -8,11 +8,10 @@ let clicks = {
     categoria3: false,
     categoria4: false,
     categoria5: false,
-    categoria6:false
+    categoria6: false
 }
 
-
-const buscarSonidos = function (event) {
+const buscarSonidos = function ( event ) {
     let target = event.currentTarget.getAttribute('name');
     //console.log('target ',target)
     let id;
@@ -55,6 +54,7 @@ const crearAudio = function (url) {
     audio.controls = true;
     return audio
 }
+
 const crearAudios = function (contenedorName, soundList) {
     //console.log('ejecutando crearAudios')
     //console.log('nombreDeContenedor recibido ', contenedorName)
@@ -105,5 +105,3 @@ const crearAudios = function (contenedorName, soundList) {
             break
     }
 }
-
-
